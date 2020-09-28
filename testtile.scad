@@ -9,8 +9,8 @@ wm = (w/2)-margin;
 color("green")
 difference(){
     intersection(){
-        translate([0,0,(h-5)/2])
-         cube([l,w,h-5],center=true);
+        translate([0,0,(h-6)/2])
+         cube([l,w,h-6],center=true);
          hull(){
             $fn = 34;
             translate([-1*lm,-1*wm,margin]) sphere(r=1);
@@ -36,7 +36,7 @@ difference(){
 
 
 split = .52;
-engravedepth = 0.4;
+engravedepth = 0.8;
 
 color("red")
     translate([-(l-2)/2,-(w-2)/2,h-(1+engravedepth)])
@@ -51,8 +51,8 @@ color("white")
 difference(){
     intersection(){
         union(){
-            translate([0,0,h-2.5])
-              cube([l,w,5],center=true);
+            translate([0,0,h-3])
+              cube([l,w,6],center=true);
         };
         hull(){
             $fn = 34;
